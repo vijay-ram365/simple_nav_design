@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Typography*********************************** */
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color: #555555;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: black;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Layout*********************************** */
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 675px) {
+  .container-nav {
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.5em;
+  }
+}
+
+header {
+  text-align: center;
+  background-color: lightgray;
+  padding: 2em 0;
+}
+
+/* Nav */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: darkslategray;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: lightslategray;
+}
+
+.current-page {
+  border-bottom: 1px solid black;
+}
+
+.current-page:hover {
+  color: lightslategray;
+}
